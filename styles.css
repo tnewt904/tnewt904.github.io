@@ -1,0 +1,186 @@
+body,
+html {
+    margin: 0 auto;
+    font-family: 'Gugi', cursive;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 18vh 64vh 18vh;
+    grid-template-columns: 10vw 40vw 40vw 10vw;
+}
+
+.menubar {
+    background-color: #4C6277;
+    display: inline-block;
+    margin-top: 0;
+    height: 18vh;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+
+.Logo {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    height: 18vh;
+    width: 18vw;
+    position: absolute;
+}
+
+.menubar li {
+    display: inline-block;
+    background: #26CAFB;
+    width: 190px;
+    left: 16%;
+    top: 20%;
+    padding: 25px 25px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.menubar li a {
+    color: white;
+    text-decoration: none;
+    top: 15%;
+
+
+}
+
+.menubar li:hover {
+    background-color: black;
+}
+
+.menubar li ul {
+    visibility: hidden;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 16%;
+    z-index: 10;
+}
+
+.menubar li:hover ul {
+    visibility: visible;
+}
+
+.menubar li ul li {
+    background-color: black;
+    display: block;
+}
+
+.menubar li ul li:hover {
+    background: darkseagreen;
+}
+
+.menubar li ul li a {
+    color: white;
+}
+
+.main {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    text-align: center;
+    background-color:#26CAFB;
+}
+
+
+
+.Cliff {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    margin-left: 0;
+    height: 64vh;
+    width: 80vw;
+    z-index: 1;
+}
+
+
+
+.button {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    color: white;
+    padding: 20px 20px;
+    cursor: pointer;
+    width: 25vw;
+    display: block;
+    position: absolute;
+    left: 35vw;
+    top: 20vh;
+    z-index: 12;
+    opacity: 0;
+}
+
+.board {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    z-index: 11;
+    left: 40vw;
+    top: 22vh;
+}
+
+.text {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: #4C6277;
+    color: white;
+    padding: 20px 20px;
+}
+
+.media {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-color: #4C6277;
+   padding-left: 40%;
+    color: white;
+   
+}
+
+
+
+.form {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+    background-color: #4C6277;
+    color: white;
+    padding: 5px 5px;
+    padding-left: 50%;
+    
+}
+
+.form input[type="email"] {}
+
+.form input[type="submit"]:hover {
+    background-color: #26CAFB;
+}
+
+@media only screen and (max-width: 479px) {
+    .menubar {
+        display: block;
+    }
+
+    .menubar li {
+        display: block;
+        width: 100vw;
+    }
+
+    .text {
+        font-size: x-small;
+    }
+
+    .media {
+        font-size: x-small;
+    }
+
+    .form {
+        font-size: x-small;
+    }
+
+}

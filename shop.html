@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="grid">
+        <nav id="mobilemenu"></nav>
+        <nav class="menubar">
+            <img src="Images/Logo.jpg" class="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="top"><a href="faq.html">FAQ's</a>
+
+                </li>
+                <li class="top"><a href="#">Locations</a>
+                    <ul>
+                        <li><a href="raleigh.html">Raleigh</a></li>
+                        <li><a href="wilmy.html">Wilmington</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </nav>
+        <div class="card1">
+            <img src="Images/Board1.jpg" class="Board1" style="width:100%">
+            <div class="container1">
+                <h4><b>X Series - Longboard</b></h4>
+                <p>$400
+                </p>
+                <div class="form-group">
+                    <form action="/cart/add" method="POST">
+                        <input name="quantity" type="hidden" value="1" />
+                        <input name="product_id" type="hidden" value="91801160" />
+                        <input name="product_name" type="hidden" value="Red Hat" />
+                        <button class="add-button" type="submit">Add to Cart!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="Images/Board2.jpg" class="Board2" style="width:100%">
+            <div class="container2">
+                <h4><b>Flaming Barrel - Shortboard</b></h4>
+                <p>$275</p>
+                <div class="form-group">
+                    <form action="/cart/add" method="POST">
+                        <input name="quantity" type="hidden" value="1" />
+                        <input name="product_id" type="hidden" value="91801160" />
+                        <input name="product_name" type="hidden" value="Red Hat" />
+                        <button class="add-button" type="submit">Add to Cart!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card3">
+            <img src="Images/Board3.jpg" class="Board3" style="width:100%">
+            <div class="container3">
+                <h4><b>Morning Rooster - Funboard</b></h4>
+                <p>$350</p>
+                <div class="form-group">
+                    <form action="/cart/add" method="POST">
+                        <input name="quantity" type="hidden" value="1" />
+                        <input name="product_id" type="hidden" value="91801160" />
+                        <input name="product_name" type="hidden" value="Red Hat" />
+                        <button class="add-button" type="submit">Add to Cart!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <p>Feedback</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+        </div>
+        <div class="media">
+            <p>Facebook
+                <i class="fab fa-facebook"></i></p>
+            <p>Twitter
+                <i class="fab fa-twitter"></i></p>
+            <p>Instagram
+                <i class="fab fa-instagram"></i></p>
+        </div>
+        <div class="form">
+                <p>Phone: (1)-919-605-4334</p>
+            <p>Hear about our deals</p>
+            <form>
+                E-mail:
+                <input type="email" name="email">
+
+                <input type="submit"></form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
